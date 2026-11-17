@@ -1,0 +1,22 @@
+{
+  "name": "knb-discord-control-panel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Discord bot and web control panel for moderation, channels, and games.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node --check src/index.js && node --check src/bot.js && node --check src/web.js && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.1.0"
+  }
+}
